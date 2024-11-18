@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lakeview Luxe Boutique - Chicago</title>
+    
+    <!-- Link to jQuery (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Link to Materialize CSS (CDN) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    
+    <!-- Link to your custom stylesheet (keeps previous styles) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Header Section -->
+   <header>
+    <img src="Images/LakeviewLuxe.png" alt="LakeviewLuxe" class="small-image">
+    <p>Your go-to destination for all things stylish!</p>
+</header>
+
+<!-- Navigation Menu -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="collections.html">Collections</a>
+    <a href="bootstrap.html">Gifts</a>
+    <a href="materializeJS.html">The Boutique</a>
+    <a href="materialize.html">Media</a>
+    <a href="jquery.html">Our Blog</a>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <section class="container">
+        <h2>Welcome to Our Blog </h2>
+        
+        <!-- Blog Post Section with Toggle Functionality -->
+        <div class="post card-panel">
+            <h5> Christmas Wishlist</h5>
+            <button id="togglePostContent" class="btn pink">Read More</button>
+            <p id="postContent" style="display:none;">
+                This Christmas season, 2024 brings a perfect blend of cozy chic and festive elegance to holiday fashion. Rich jewel tones like emerald, ruby, and deep plum are taking center stage, offering a fresh take on the traditional red and green palette. Whether you’re attending a Christmas dinner or a cozy family gathering, layering is key. Chunky knit cardigans, oversized sweaters, and faux fur accessories add warmth and texture, while satin and velvet dresses bring a touch of luxury. Sequins and metallics are making a subtle yet sophisticated comeback, perfect for adding a bit of sparkle to your outfit without going overboard.
+                Christmas fashion this year is all about comfort without compromising style, with cozy knit scarves, mittens, and chic knee-high boots completing every look. Accessories like statement earrings and festive hats provide the perfect finishing touch, while classic holiday styles—think plaid, reindeer sweaters, and tartan scarves—remain timeless. At our boutique, we’ve curated a collection that captures the magic of the season, combining modern trends with traditional charm to help you celebrate the holidays in style. Whether you're dressing up or down, Christmas 2024 has something for everyone to look and feel their best.
+
+        </div>
+
+        <!-- Testimonials Section with Slide Effect -->
+        <div class="testimonial card-panel">
+            <h5>Customer Testimonials</h5>
+            <button id="showTestimonials" class="btn pink">View Testimonials</button>
+            <div id="testimonialContent" style="display:none;">
+                <p>"Absolutely love the quality and style of the pieces here. They are always unique!" - Sarah J.</p>
+                <p>"The staff is amazing, and they always help me find exactly what I need." - Emily R.</p>
+                <p>"I get so many compliments whenever I wear something from this boutique!" - Laura T.</p>
+            </div>
+        </div>
+
+        <!-- Special Offer Section with Fade Effect -->
+        <div class="special-offer card-panel">
+            <h5>Exclusive Offer!</h5>
+            <button id="showOffer" class="btn pink">Reveal Offer</button>
+            <p id="offerContent" style="display:none;">
+                Enjoy 20% off on all new arrivals! Use code <strong>FALL20</strong> at checkout.
+            </p>
+        </div>
+    </section>
+</main>
+
+ <!-- Footer Section -->
+ <footer>
+    <p><b>Lakeview Luxe Boutique </b> | <a href="https://www.chicago.gov/" target="_blank" style="color: white;">Downtown Chicago, IL</a> | All Rights Reserved 2024</p>
+</footer>
+
+<!-- jQuery Script for Interactivity -->
+<script>
+    // Toggle Blog Post Content
+    $("#togglePostContent").click(function(){
+        $("#postContent").toggle("fast");
+    });
+
+    // Slide-in Effect for Testimonials
+    $("#showTestimonials").click(function(){
+        $("#testimonialContent").slideToggle("slow");
+    });
+
+    // Fade-in Effect for Special Offer
+    $("#showOffer").click(function(){
+        $("#offerContent").fadeToggle("slow");
+    });
+</script>
+</body>
+</html>

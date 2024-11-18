@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lakeview Luxe Boutique - Chicago</title>
+    
+    <!-- Link to Materialize CSS (CDN) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    
+    <!-- Link to your custom stylesheet (keeps previous styles) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Header Section -->
+   <header>
+    <img src="Images/LakeviewLuxe.png" alt="LakeviewLuxe" class="small-image">
+
+
+    <p>Your go-to destination for all things stylish!</p>
+</header>
+
+<!-- Navigation Menu -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="collections.html">Collections</a>
+    <a href="bootstrap.html">Gifts</a>
+    <a href="materializeJS.html">The Boutique</a>
+    <a href="materialize.html">Media</a>
+    <a href="jquery.html">Our Blog</a>
+</nav>
+
+
+    <!-- Main Content: Carousel Section -->
+    <main>
+        <section>
+            <h2>Our Boutique</h2>
+            <p>Explore our curated collection of images showcasing the charm and elegance of our boutique's style.</p>
+            
+            <!-- Carousel Slider -->
+            <div class="carousel carousel-slider center">
+                <div class="carousel-item" href="#one!">
+                    <img src="https://i.pinimg.com/originals/c8/a1/ea/c8a1ea505eabf50351b0c9f7e2925c7a.jpg" alt="Fashion Style 1">
+                </div>
+                <div class="carousel-item" href="#two!">
+                    <img src="https://static.careerarc.com/wp-content/uploads/2020/03/how-to-recruit-retail-employees-thegem-blog-timeline-large.png" alt="Fashion Style 2">
+                </div>
+                <div class="carousel-item" href="#three!">
+                    <img src="https://media.istockphoto.com/id/1046208342/photo/happy-couple-shopping-at-a-clothing-store.jpg?s=612x612&w=0&k=20&c=VjtQ6AwUPO96m1M58DMmhSwXd3ffoY0Ol_cxXiAqQ8U=" alt="Fashion Style 3">
+                </div>
+                <div class="carousel-item" href="#four!">
+                    <img src="https://s3.envato.com/files/280696072/EE4I7606%20copy.jpg" alt="Fashion Style 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Collapsible Section -->
+        <section>
+            <h2>More About Our Boutique</h2>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons"></i>Our Philosophy</div>
+                    <div class="collapsible-body"><span>At Charming Boutique, we believe in timeless style with a modern twist, perfect for the chic city dweller.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons"></i>Location & Atmosphere</div>
+                    <div class="collapsible-body"><span>Located in the heart of Chicago, our boutique provides a warm and inviting atmosphere for all fashion lovers.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons"></i>Latest Trends</div>
+                    <div class="collapsible-body"><span>Stay ahead of the trends with our handpicked styles, curated to elevate your wardrobe for any season.</span></div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+   <!-- Footer Section -->
+   <footer>
+    <p><b>Lakeview Luxe Boutique </b> | <a href="https://www.chicago.gov/" target="_blank" style="color: white;">Downtown Chicago, IL</a> | All Rights Reserved 2024</p>
+</footer>
+
+    <!-- Materialize and JavaScript Initialization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Carousel
+            var carouselElems = document.querySelectorAll('.carousel');
+            M.Carousel.init(carouselElems, {
+                fullWidth: true,
+                indicators: true
+            });
+
+            // Initialize Collapsible
+            var collapsibleElems = document.querySelectorAll('.collapsible');
+            M.Collapsible.init(collapsibleElems);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+    background-color: #ffffff; /* white background */
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #f18db2; /* Soft pink */
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/* Header Styling */
+header {
+    background-color: #ffffff; /* pink color */
+    color: white; /* Ensure the text is white */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add padding for spacing */
+    font-family: 'Roboto', sans-serif; /* Match other fonts */
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive; /* Dainty font for header */
+    font-size: 60px;
+}
+
+/* Header Text Styling */
+h1, h2, h3 {
+    color: #f18db2; /* Soft red/pink text */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* Navigation Menu Styling */
+nav {
+    background-color: #f18db2; /* Light pink for navigation */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+nav a {
+    color: rgb(255, 255, 255); /* White text for links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 22px;
+    font-family: 'Cookie'; /* Dainty font for links */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+nav a:hover {
+    color: #9d0054; /* Darker pink on hover */
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff; /* White background for table */
+}
+
+th, td {
+    border: 1px solid #f18db2; /* Pink borders */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f18db2; /* Pink background for table headers */
+    color: rgb(255, 255, 255);
+}
+
+/* Aside Styling */
+aside {
+    background-color: #ffffff9b; /* Semi-transparent white for aside */
+    padding: 15px;
+    border: 1px solid #ff6f91; /* Pink border */
+    margin: 20px 0;
+}
+
+/* Photo Spot and Image Styling */
+.photo-spot {
+    text-align: center; /* Centers the image container */
+    margin: 20px 0;
+}
+
+.photo-spot img {
+    max-width: 300px; /* Adjusts the image width to be smaller */
+    height: auto; /* Maintains the image’s aspect ratio */
+    border: 5px solid #ff6f91; /* Pink border for images */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    display: inline-block; /* Allows centering within the .photo-spot container */
+}
+
+.photo-spot img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Centering Images */
+.image-container {
+    text-align: center;
+    margin: 20px 0; /* Optional: adds space above and below the image */
+}
+
+.image-container img {
+    max-width: 100%;  /* Ensure the image is responsive */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Footer Styling */
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Buttons Styling */
+.boutique-btn {
+    background-color: #feacbf; /* Soft pink background */
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Cookie', cursive;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.boutique-btn:hover {
+    background-color: #ffffff; /* Darker pink on hover */
+}
+
+/* Feature Box Styling */
+.feature-box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Description, Promotional Offer, More Products Styling */
+.product-description, .promo-offer, .more-products {
+    padding: 15px;
+    background-color: #ffcad6; /* Light pink for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Information */
+.footer-info {
+    background-color: #ffcad6; /* Pink background for footer info */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
